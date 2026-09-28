@@ -1,0 +1,26 @@
+# Nimbupani Workspace manifest. Generated at repo creation; safe to commit.
+version: 1
+project:
+  name: "Tandem"
+  description: "For teams tired of channel chaos, Tandem turns Slack-style communication into focused, threaded conversations with presence-aware focus modes. It combines real-time messaging, direct messages, and file sharing in a desktop app that respects deep work."
+  stack:
+    - "TypeScript"
+    - "React"
+    - "Electron"
+    - "Go"
+    - "PostgreSQL"
+    - "Redis"
+    - "WebSocket"
+    - "Amazon S3"
+repo:
+  name: "tandem-realtime"
+  purpose: "WebSocket gateway for live message delivery and presence."
+siblings:
+  - name: "tandem-app"
+    purpose: "Desktop and web client for the team workspace."
+  - name: "tandem-server"
+    purpose: "Core API for accounts, channels, messages, and search."
+context:
+  file: "context.md"
+  conventions: "conventions.md"
+  decisions_dir: "decisions/"
